@@ -9,18 +9,18 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="section-spacing bg-white">
+    <section id="projects" className="section-spacing bg-background">
       <div className="container-spacing">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary-custom mb-4">Featured Projects</h2>
-          <p className="text-xl text-text-custom/70 max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Featured Projects</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Showcasing my development skills through real-world applications
           </p>
         </div>
 
         <div className="grid lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
           {/* Auction System Project */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-neutral-custom/50 hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-card border border-border rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img
@@ -31,18 +31,18 @@ export default function Projects() {
               </div>
               <div className="md:w-1/2 p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <h3 className="text-2xl font-bold text-primary-custom">Auction System</h3>
+                  <h3 className="text-2xl font-bold text-card-foreground">Auction System</h3>
                   <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">In Progress</span>
                 </div>
                 
-                <p className="text-text-custom/70 mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed">
                   A real-time auction platform that enables users to bid on items with live updates and secure payment processing. 
                   Features user authentication, item listing, bidding mechanisms, and real-time notifications for an 
                   engaging auction experience.
                 </p>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-primary-custom mb-3">Technologies Used</h4>
+                  <h4 className="font-semibold text-card-foreground mb-3">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">
                     <span className="bg-secondary-custom/10 text-secondary-custom px-3 py-1 rounded-full text-sm">MongoDB</span>
                     <span className="bg-secondary-custom/10 text-secondary-custom px-3 py-1 rounded-full text-sm">Express.js</span>
@@ -68,7 +68,7 @@ export default function Projects() {
           </div>
 
           {/* WORK HUNT Project */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-neutral-custom/50 hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-card border border-border rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img
@@ -79,18 +79,18 @@ export default function Projects() {
               </div>
               <div className="md:w-1/2 p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <h3 className="text-2xl font-bold text-primary-custom">WORK HUNT</h3>
+                  <h3 className="text-2xl font-bold text-card-foreground">WORK HUNT</h3>
                   <span className="bg-accent-custom text-white px-3 py-1 rounded-full text-sm">Featured</span>
                 </div>
                 
-                <p className="text-text-custom/70 mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed">
                   A comprehensive job portal website featuring dual login systems for job seekers and employers. 
                   The platform serves as a bridge connecting talented individuals with potential employers, 
                   facilitating seamless job discovery and recruitment processes.
                 </p>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-primary-custom mb-3">Technologies Used</h4>
+                  <h4 className="font-semibold text-card-foreground mb-3">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">
                     <span className="bg-secondary-custom/10 text-secondary-custom px-3 py-1 rounded-full text-sm">MongoDB</span>
                     <span className="bg-secondary-custom/10 text-secondary-custom px-3 py-1 rounded-full text-sm">Express.js</span>
@@ -117,7 +117,7 @@ export default function Projects() {
 
         {/* Call to Action for More Projects */}
         <div className="text-center mt-12">
-          <p className="text-text-custom/70 mb-6">Interested in seeing more of my work?</p>
+          <p className="text-muted-foreground mb-6">Interested in seeing more of my work?</p>
           <button
             onClick={() => scrollToSection("contact")}
             className="bg-secondary-custom hover:bg-secondary-custom/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"

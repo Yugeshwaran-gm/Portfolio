@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Phone, Github, Linkedin } from "lucide-react";
+import { Phone } from "lucide-react";
+import { SiGithub, SiLinkedin, SiLeetcode } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -80,7 +81,7 @@ export default function Contact() {
               
               <div className="flex items-center gap-4">
                 <div className="bg-white/20 rounded-full p-3">
-                  <Github className="h-5 w-5" />
+                  <SiGithub className="h-5 w-5" />
                 </div>
                 <div>
                   <h4 className="font-semibold">GitHub</h4>
@@ -90,11 +91,21 @@ export default function Contact() {
               
               <div className="flex items-center gap-4">
                 <div className="bg-white/20 rounded-full p-3">
-                  <Linkedin className="h-5 w-5" />
+                  <SiLinkedin className="h-5 w-5" />
                 </div>
                 <div>
                   <h4 className="font-semibold">LinkedIn</h4>
                   <a href="https://linkedin.com/in/yugeshwaran-g" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">linkedin.com/in/yugeshwaran-g</a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="bg-white/20 rounded-full p-3">
+                  <SiLeetcode className="h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">LeetCode</h4>
+                  <a href="https://leetcode.com/yugeshwarangm" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">leetcode.com/yugeshwarangm</a>
                 </div>
               </div>
             </div>

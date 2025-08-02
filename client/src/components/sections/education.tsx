@@ -2,11 +2,11 @@ import { GraduationCap } from "lucide-react";
 
 export default function Education() {
   return (
-    <section id="education" className="section-spacing bg-neutral-custom/30">
+    <section id="education" className="section-spacing bg-muted/30">
       <div className="container-spacing">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary-custom mb-4">Education</h2>
-          <p className="text-xl text-text-custom/70 max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Education</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             My academic journey in computer science and technology
           </p>
         </div>
@@ -22,17 +22,17 @@ export default function Education() {
                 <GraduationCap className="h-4 w-4 text-white" />
               </div>
               <div className="ml-12 md:ml-0 md:w-1/2 md:pr-8">
-                <div className="bg-white rounded-xl p-6 shadow-lg">
+                <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-primary-custom">Master of Computer Applications</h3>
-                      <p className="text-text-custom/70">Kongu Engineering College</p>
+                      <h3 className="text-xl font-bold text-card-foreground">Master of Computer Applications</h3>
+                      <p className="text-muted-foreground">Kongu Engineering College</p>
                     </div>
                     <span className="bg-secondary-custom text-white px-3 py-1 rounded-full text-sm">2024 - 2026</span>
                   </div>
-                  <p className="text-text-custom/70 mb-3">Currently pursuing advanced studies in computer applications</p>
+                  <p className="text-muted-foreground mb-3">Currently pursuing advanced studies in computer applications</p>
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-primary-custom">CGPA:</span>
+                    <span className="font-semibold text-card-foreground">CGPA:</span>
                     <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-semibold">8.26</span>
                   </div>
                 </div>
@@ -45,17 +45,17 @@ export default function Education() {
                 <GraduationCap className="h-4 w-4 text-white" />
               </div>
               <div className="ml-12 md:ml-0 md:w-1/2 md:pl-8">
-                <div className="bg-white rounded-xl p-6 shadow-lg">
+                <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-primary-custom">BSc Computer Science</h3>
-                      <p className="text-text-custom/70">Mannar Thirumalai Naicker College</p>
+                      <h3 className="text-xl font-bold text-card-foreground">BSc Computer Science</h3>
+                      <p className="text-muted-foreground">Mannar Thirumalai Naicker College</p>
                     </div>
                     <span className="bg-secondary-custom text-white px-3 py-1 rounded-full text-sm">2021 - 2024</span>
                   </div>
-                  <p className="text-text-custom/70 mb-3">Comprehensive foundation in computer science principles</p>
+                  <p className="text-muted-foreground mb-3">Comprehensive foundation in computer science principles</p>
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-primary-custom">CGPA:</span>
+                    <span className="font-semibold text-card-foreground">CGPA:</span>
                     <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-semibold">7.61</span>
                   </div>
                 </div>

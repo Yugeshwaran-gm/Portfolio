@@ -24,11 +24,11 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? "bg-white shadow-sm" : "bg-white/95 backdrop-blur-sm"
-    } border-b border-neutral-custom/20`}>
+      isScrolled ? "bg-background shadow-sm" : "bg-background/95 backdrop-blur-sm"
+    } border-b border-border`}>
       <div className="container-spacing">
         <div className="flex justify-between items-center py-4">
-          <div className="text-xl font-bold text-primary-custom">Yugeshwaran G</div>
+          <div className="text-xl font-bold text-foreground">Yugeshwaran G</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
@@ -43,7 +43,7 @@ export default function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-text-custom hover:text-secondary-custom transition-colors duration-200"
+                className="text-foreground hover:text-secondary-custom transition-colors duration-200"
               >
                 {item.label}
               </button>
@@ -52,7 +52,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-primary-custom"
+            className="md:hidden text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -74,7 +74,7 @@ export default function Navigation() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left text-text-custom hover:text-secondary-custom transition-colors duration-200"
+                  className="text-left text-foreground hover:text-secondary-custom transition-colors duration-200"
                 >
                   {item.label}
                 </button>

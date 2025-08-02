@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(0, 0%, 100%);
-  --foreground: hsl(208, 13%, 20%);
-  --muted: hsl(210, 13%, 95%);
-  --muted-foreground: hsl(208, 13%, 45%);
-  --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(208, 13%, 20%);
-  --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(208, 13%, 20%);
-  --border: hsl(210, 13%, 90%);
-  --input: hsl(210, 13%, 90%);
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 6%, 10%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
   --primary: hsl(210, 22%, 22%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(204, 70%, 53%);
@@ -21,10 +21,10 @@
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --ring: hsl(208, 13%, 20%);
+  --ring: hsl(240, 5%, 84%);
   --radius: 0.5rem;
-  --neutral: hsl(210, 16%, 93%);
-  --text: hsl(208, 13%, 20%);
+  --neutral: hsl(240, 4%, 16%);
+  --text: hsl(0, 0%, 98%);
 }
 
 .dark {

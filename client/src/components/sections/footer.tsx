@@ -1,4 +1,5 @@
-import { Heart, Github, Linkedin, Phone } from "lucide-react";
+import { Heart, Phone } from "lucide-react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors duration-200"
             >
-              <Github className="h-5 w-5" />
+              <SiGithub className="h-5 w-5" />
             </a>
             <a
               href="https://linkedin.com/in/yugeshwaran-g"
@@ -23,7 +24,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white transition-colors duration-200"
             >
-              <Linkedin className="h-5 w-5" />
+              <SiLinkedin className="h-5 w-5" />
             </a>
             <a
               href="tel:+919514955425"

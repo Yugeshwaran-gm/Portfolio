@@ -68,11 +68,11 @@ export default function Certificates() {
   ];
 
   return (
-    <section className="section-spacing bg-neutral-custom/30">
+    <section className="section-spacing bg-muted/30">
       <div className="container-spacing">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary-custom mb-4">Certificates & Achievements</h2>
-          <p className="text-xl text-text-custom/70 max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Certificates & Achievements</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Continuous learning and professional development milestones
           </p>
         </div>
@@ -81,13 +81,13 @@ export default function Certificates() {
           {certificates.map((cert, index) => {
             const IconComponent = cert.icon;
             return (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-200">
+              <div key={index} className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-200">
                 <div className="flex items-center gap-3 mb-4">
                   <IconComponent className="h-5 w-5 text-secondary-custom" />
-                  <h3 className="font-bold text-primary-custom">{cert.title}</h3>
+                  <h3 className="font-bold text-card-foreground">{cert.title}</h3>
                 </div>
-                <p className="text-text-custom/70 text-sm mb-2">{cert.issuer} • {cert.date}</p>
-                <p className="text-text-custom/70">{cert.description}</p>
+                <p className="text-muted-foreground text-sm mb-2">{cert.issuer} • {cert.date}</p>
+                <p className="text-muted-foreground">{cert.description}</p>
               </div>
             );
           })}

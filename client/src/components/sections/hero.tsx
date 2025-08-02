@@ -1,4 +1,5 @@
-import { ExternalLink, Phone, Github, Linkedin } from "lucide-react";
+import { ExternalLink, Phone } from "lucide-react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -47,7 +48,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="text-white hover:text-accent-custom transition-colors duration-200"
               >
-                <Github className="h-6 w-6" />
+                <SiGithub className="h-6 w-6" />
               </a>
               <a
                 href="https://linkedin.com/in/yugeshwaran-g"
@@ -55,7 +56,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="text-white hover:text-accent-custom transition-colors duration-200"
               >
-                <Linkedin className="h-6 w-6" />
+                <SiLinkedin className="h-6 w-6" />
               </a>
               <a
                 href="tel:+919514955425"
