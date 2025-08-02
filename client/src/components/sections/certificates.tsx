@@ -10,6 +10,27 @@ export default function Certificates() {
       icon: Tag
     },
     {
+      title: "MySQL Implementation Certified Associate",
+      issuer: "Oracle",
+      date: "2024",
+      description: "Database design and implementation expertise",
+      icon: Award
+    },
+    {
+      title: "API Fundamentals Student Expert",
+      issuer: "Postman",
+      date: "2024",
+      description: "REST API testing and development proficiency",
+      icon: Tag
+    },
+    {
+      title: "ESG Job Simulation",
+      issuer: "Tata Group via Forage",
+      date: "2024",
+      description: "Environmental, Social & Governance business simulation",
+      icon: Tag
+    },
+    {
       title: "Industry 4.0 & IoT",
       issuer: "NPTEL",
       date: "Apr 2025",

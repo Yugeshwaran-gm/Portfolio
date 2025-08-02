@@ -19,6 +19,54 @@ export default function Projects() {
         </div>
 
         <div className="grid lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
+          {/* Auction System Project */}
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-neutral-custom/50 hover:shadow-2xl transition-shadow duration-300">
+            <div className="md:flex">
+              <div className="md:w-1/2">
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+                  alt="Auction system project showcase"
+                  className="w-full h-64 md:h-full object-cover"
+                />
+              </div>
+              <div className="md:w-1/2 p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <h3 className="text-2xl font-bold text-primary-custom">Auction System</h3>
+                  <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">In Progress</span>
+                </div>
+                
+                <p className="text-text-custom/70 mb-6 leading-relaxed">
+                  A real-time auction platform that enables users to bid on items with live updates and secure payment processing. 
+                  Features user authentication, item listing, bidding mechanisms, and real-time notifications for an 
+                  engaging auction experience.
+                </p>
+                
+                <div className="mb-6">
+                  <h4 className="font-semibold text-primary-custom mb-3">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-secondary-custom/10 text-secondary-custom px-3 py-1 rounded-full text-sm">MongoDB</span>
+                    <span className="bg-secondary-custom/10 text-secondary-custom px-3 py-1 rounded-full text-sm">Express.js</span>
+                    <span className="bg-secondary-custom/10 text-secondary-custom px-3 py-1 rounded-full text-sm">React</span>
+                    <span className="bg-secondary-custom/10 text-secondary-custom px-3 py-1 rounded-full text-sm">Node.js</span>
+                    <span className="bg-secondary-custom/10 text-secondary-custom px-3 py-1 rounded-full text-sm">Socket.io</span>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4">
+                  <a
+                    href="https://github.com/yugeshwarangm/auction-system"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-primary-custom hover:bg-primary-custom/90 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2"
+                  >
+                    <Github className="h-4 w-4" />
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* WORK HUNT Project */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-neutral-custom/50 hover:shadow-2xl transition-shadow duration-300">
             <div className="md:flex">
@@ -53,19 +101,10 @@ export default function Projects() {
                 
                 <div className="flex gap-4">
                   <a
-                    href="https://job-portal-2.example.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-primary-custom hover:bg-primary-custom/90 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    Live Demo
-                  </a>
-                  <a
                     href="https://github.com/yugeshwarangm/work-hunt"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-neutral-custom hover:bg-neutral-custom/80 text-text-custom px-6 py-2 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2"
+                    className="bg-primary-custom hover:bg-primary-custom/90 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2"
                   >
                     <Github className="h-4 w-4" />
                     View Code
