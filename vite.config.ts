@@ -10,22 +10,23 @@ export default defineConfig({
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
+          // Lazy import so it only loads in Replit
           await import("@replit/vite-plugin-cartographer").then((m) =>
-            m.cartographer(),
+            m.cartographer()
           ),
         ]
       : []),
   ],
+  root: path.resolve(__dirname, "client"), // ✅ Use client as root
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client/src"), // ✅ now points to actual src
+      "@": path.resolve(__dirname, "client/src"), // ✅ Works for "@/..." imports
       "@shared": path.resolve(__dirname, "shared"),
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  root: path.resolve(__dirname, "client"), // ✅ set root to client folder
   build: {
-    outDir: path.resolve(__dirname, "dist/public"), // ✅ dist/public for server
+    outDir: path.resolve(__dirname, "dist/public"), // ✅ Output to server/public
     emptyOutDir: true,
   },
   server: {
