@@ -68,7 +68,7 @@ export default function Certificates() {
   ];
 
   return (
-    <section className="section-spacing bg-muted/30">
+    <section id="certificates"className="section-spacing bg-muted/30">
       <div className="container-spacing">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Certificates & Achievements</h2>

@@ -1,13 +1,15 @@
 import { SiPython, SiJavascript, SiHtml5, SiCss3, SiC, SiMongodb, SiMysql, SiGit, SiGithub, SiPostman, SiDocker } from "react-icons/si";
+import { DiJava } from "react-icons/di";
 import { VscCode } from "react-icons/vsc";
 
 export default function Skills() {
   const languages = [
+    { name: "C", icon: SiC, color: "text-blue-700" },
     { name: "Python", icon: SiPython, color: "text-blue-500" },
-    { name: "JavaScript", icon: SiJavascript, color: "text-yellow-500" },
+    { name: "Java", icon: DiJava, color: "text-red-500" },
     { name: "HTML5", icon: SiHtml5, color: "text-orange-500" },
     { name: "CSS3", icon: SiCss3, color: "text-blue-600" },
-    { name: "C", icon: SiC, color: "text-blue-700" }
+    { name: "JavaScript", icon: SiJavascript, color: "text-yellow-500" }
   ];
 
   const databases = [

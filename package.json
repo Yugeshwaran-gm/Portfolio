@@ -4,9 +4,9 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development tsx server/index.ts",
-    "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
-    "start": "NODE_ENV=production node dist/index.js",
+    "dev": "cross-env NODE_ENV=development tsx server/index.ts",
+    "build": "cd client && npm ci --legacy-peer-deps && npm run build && cd .. && tsc",
+    "start": "cross-env NODE_ENV=production node dist/server/index.ts",
     "check": "tsc",
     "db:push": "drizzle-kit push"
   },
@@ -48,6 +48,7 @@
     "cmdk": "^1.1.1",
     "connect-pg-simple": "^10.0.0",
     "date-fns": "^3.6.0",
+    "dotenv": "^17.2.1",
     "drizzle-orm": "^0.39.1",
     "drizzle-zod": "^0.7.0",
     "embla-carousel-react": "^8.6.0",
@@ -55,7 +56,7 @@
     "express-session": "^1.18.1",
     "framer-motion": "^11.13.1",
     "input-otp": "^1.4.2",
-    "lucide-react": "^0.453.0",
+    "lucide-react": "^0.536.0",
     "memorystore": "^1.6.7",
     "next-themes": "^0.4.6",
     "nodemailer": "^7.0.5",
@@ -74,7 +75,7 @@
     "vaul": "^1.1.2",
     "wouter": "^3.3.5",
     "ws": "^8.18.0",
-    "zod": "^3.24.2",
+    "zod": "^4.0.14",
     "zod-validation-error": "^3.4.0"
   },
   "devDependencies": {
@@ -93,13 +94,14 @@
     "@types/ws": "^8.5.13",
     "@vitejs/plugin-react": "^4.3.2",
     "autoprefixer": "^10.4.20",
-    "drizzle-kit": "^0.30.4",
+    "cross-env": "^10.0.0",
+    "drizzle-kit": "^0.31.4",
     "esbuild": "^0.25.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.19.1",
     "typescript": "5.6.3",
-    "vite": "^5.4.19"
+    "vite": "^7.0.6"
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"

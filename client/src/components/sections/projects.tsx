@@ -54,7 +54,7 @@ export default function Projects() {
                 
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/yugeshwarangm/auction-system"
+                    href="https://github.com/Yugeshwaran-gm/Auction-System-MERN"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-primary-custom hover:bg-primary-custom/90 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2"

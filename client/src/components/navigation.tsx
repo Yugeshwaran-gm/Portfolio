@@ -38,6 +38,7 @@ export default function Navigation() {
               { label: "Skills", id: "skills" },
               { label: "Education", id: "education" },
               { label: "Projects", id: "projects" },
+              { label: "Certificates", id: "certificates" },
               { label: "Contact", id: "contact" }
             ].map((item) => (
               <button
@@ -69,6 +70,7 @@ export default function Navigation() {
                 { label: "Skills", id: "skills" },
                 { label: "Education", id: "education" },
                 { label: "Projects", id: "projects" },
+                { label: "Certificates", id: "certificates" },
                 { label: "Contact", id: "contact" }
               ].map((item) => (
                 <button

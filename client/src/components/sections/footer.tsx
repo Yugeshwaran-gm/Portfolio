@@ -1,4 +1,4 @@
-import { Heart, Phone } from "lucide-react";
+import {  Phone } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
 export default function Footer() {
@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container-spacing">
         <div className="text-center">
           <p className="text-white/70 flex items-center justify-center gap-2">
-            © 2024 Yugeshwaran G. Designed and developed with <Heart className="h-4 w-4 text-accent-custom" />
+            © 2024 Yugeshwaran G. 
           </p>
           <div className="flex justify-center gap-6 mt-4">
             <a

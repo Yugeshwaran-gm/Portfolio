@@ -25,7 +25,7 @@ export default function Education() {
                 <div className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-card-foreground">Master of Computer Applications</h3>
+                      <h3 className="text-xl font-bold text-card-foreground">MCA</h3>
                       <p className="text-muted-foreground">Kongu Engineering College</p>
                     </div>
                     <span className="bg-secondary-custom text-white px-3 py-1 rounded-full text-sm">2024 - 2026</span>

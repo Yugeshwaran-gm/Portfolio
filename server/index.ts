@@ -1,6 +1,11 @@
 import express, { type Request, Response, NextFunction } from "express";
+import dotenv from "dotenv";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+
+dotenv.config();
+console.log("GMAIL_USER:", process.env.GMAIL_USER);
+console.log("GMAIL_APP_PASSWORD:", process.env.GMAIL_APP_PASSWORD ? "Loaded" : "Missing");
 
 const app = express();
 app.use(express.json());
@@ -54,6 +59,11 @@ app.use((req, res, next) => {
     await setupVite(app, server);
   } else {
     serveStatic(app);
+    const __dirnameFull = path.resolve();
+    app.use(express.static(path.join(__dirnameFull, "client/dist")));
+    app.get("*", (req, res) => {
+      res.sendFile(path.join(__dirnameFull, "client/dist", "index.html"));
+    });
   }
 
   // ALWAYS serve the app on the port specified in the environment variable PORT
@@ -61,11 +71,13 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || '5000', 10);
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
-  });
+const host = process.env.NODE_ENV === "development" ? "localhost" : "0.0.0.0";
+
+server.listen({ port, host }, () => {
+  if (host === "localhost") {
+    console.log(`🚀 Server running at: http://localhost:${port}`);
+  } else {
+    console.log(`🚀 Server running at: http://${host}:${port}`);
+  }
+});
 })();

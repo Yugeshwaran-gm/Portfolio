@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 hover:scale-105 transition-transform duration-300 cursor-pointer">
+              {/* <div className="flex items-center gap-4 hover:scale-105 transition-transform duration-300 cursor-pointer">
                 <div className="bg-white/20 rounded-full p-3 hover:bg-white/30 transition-colors duration-300">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
@@ -90,7 +90,7 @@ export default function Contact() {
                   <h4 className="font-semibold">Email</h4>
                   <a href="mailto:yugeshwarangm@gmail.com" className="text-white/90 hover:text-white transition-colors">yugeshwarangm@gmail.com</a>
                 </div>
-              </div>
+              </div> */}
               
               <div className="flex items-center gap-4 hover:scale-105 transition-transform duration-300 cursor-pointer">
                 <div className="bg-white/20 rounded-full p-3 hover:bg-white/30 transition-colors duration-300">
@@ -98,7 +98,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold">GitHub</h4>
-                  <a href="https://github.com/yugeshwarangm" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">github.com/yugeshwarangm</a>
+                  <a href="https://github.com/yugeshwarangm" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">yugeshwarangm</a>
                 </div>
               </div>
               
@@ -108,7 +108,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold">LinkedIn</h4>
-                  <a href="https://linkedin.com/in/yugeshwaran-g" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">linkedin.com/in/yugeshwaran-g</a>
+                  <a href="https://linkedin.com/in/yugeshwaran-g" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">yugeshwaran-g</a>
                 </div>
               </div>
 
@@ -118,7 +118,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold">LeetCode</h4>
-                  <a href="https://leetcode.com/yugeshwarangm" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">leetcode.com/yugeshwarangm</a>
+                  <a href="https://leetcode.com/u/YUGESHWARAN-G/" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">yugeshwarangm</a>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Contact() {
                 <span className="bg-white/20 px-4 py-2 rounded-full">Full Stack Development</span>
                 <span className="bg-white/20 px-4 py-2 rounded-full">MERN Stack</span>
                 <span className="bg-white/20 px-4 py-2 rounded-full">Python Backend</span>
-                <span className="bg-white/20 px-4 py-2 rounded-full">Photography</span>
+                {/* <span className="bg-white/20 px-4 py-2 rounded-full">Photography</span> */}
               </div>
             </div>
           </div>
