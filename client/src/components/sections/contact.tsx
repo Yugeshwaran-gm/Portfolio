@@ -69,8 +69,8 @@ export default function Contact() {
             <h3 className="text-2xl font-bold mb-8">Get In Touch</h3>
             
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="bg-white/20 rounded-full p-3">
+              <div className="flex items-center gap-4 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                <div className="bg-white/20 rounded-full p-3 hover:bg-white/30 transition-colors duration-300">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
@@ -78,9 +78,22 @@ export default function Contact() {
                   <a href="tel:+919514955425" className="text-white/90 hover:text-white transition-colors">+91 9514955425</a>
                 </div>
               </div>
+
+              <div className="flex items-center gap-4 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                <div className="bg-white/20 rounded-full p-3 hover:bg-white/30 transition-colors duration-300">
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Email</h4>
+                  <a href="mailto:yugeshwarangm@gmail.com" className="text-white/90 hover:text-white transition-colors">yugeshwarangm@gmail.com</a>
+                </div>
+              </div>
               
-              <div className="flex items-center gap-4">
-                <div className="bg-white/20 rounded-full p-3">
+              <div className="flex items-center gap-4 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                <div className="bg-white/20 rounded-full p-3 hover:bg-white/30 transition-colors duration-300">
                   <SiGithub className="h-5 w-5" />
                 </div>
                 <div>
@@ -89,8 +102,8 @@ export default function Contact() {
                 </div>
               </div>
               
-              <div className="flex items-center gap-4">
-                <div className="bg-white/20 rounded-full p-3">
+              <div className="flex items-center gap-4 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                <div className="bg-white/20 rounded-full p-3 hover:bg-white/30 transition-colors duration-300">
                   <SiLinkedin className="h-5 w-5" />
                 </div>
                 <div>
@@ -99,8 +112,8 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="bg-white/20 rounded-full p-3">
+              <div className="flex items-center gap-4 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                <div className="bg-white/20 rounded-full p-3 hover:bg-white/30 transition-colors duration-300">
                   <SiLeetcode className="h-5 w-5" />
                 </div>
                 <div>

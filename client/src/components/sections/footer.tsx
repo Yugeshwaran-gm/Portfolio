@@ -14,7 +14,7 @@ export default function Footer() {
               href="https://github.com/yugeshwarangm"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/70 hover:text-white transition-colors duration-200"
+              className="text-white/70 hover:text-white hover:scale-110 transition-all duration-200"
             >
               <SiGithub className="h-5 w-5" />
             </a>
@@ -22,13 +22,13 @@ export default function Footer() {
               href="https://linkedin.com/in/yugeshwaran-g"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/70 hover:text-white transition-colors duration-200"
+              className="text-white/70 hover:text-white hover:scale-110 transition-all duration-200"
             >
               <SiLinkedin className="h-5 w-5" />
             </a>
             <a
               href="tel:+919514955425"
-              className="text-white/70 hover:text-white transition-colors duration-200"
+              className="text-white/70 hover:text-white hover:scale-110 transition-all duration-200"
             >
               <Phone className="h-5 w-5" />
             </a>

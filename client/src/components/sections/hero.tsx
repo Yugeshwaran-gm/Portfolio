@@ -27,14 +27,14 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button
                 onClick={() => scrollToSection("projects")}
-                className="bg-accent-custom hover:bg-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2"
+                className="bg-accent-custom hover:bg-red-600 hover:scale-105 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2"
               >
                 <ExternalLink className="h-5 w-5" />
                 View My Work
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-custom text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+                className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-custom hover:scale-105 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200"
               >
                 Get In Touch
               </button>
@@ -46,7 +46,7 @@ export default function Hero() {
                 href="https://github.com/yugeshwarangm"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-accent-custom transition-colors duration-200"
+                className="text-white hover:text-accent-custom hover:scale-110 transition-all duration-200"
               >
                 <SiGithub className="h-6 w-6" />
               </a>
@@ -54,13 +54,13 @@ export default function Hero() {
                 href="https://linkedin.com/in/yugeshwaran-g"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-accent-custom transition-colors duration-200"
+                className="text-white hover:text-accent-custom hover:scale-110 transition-all duration-200"
               >
                 <SiLinkedin className="h-6 w-6" />
               </a>
               <a
                 href="tel:+919514955425"
-                className="text-white hover:text-accent-custom transition-colors duration-200"
+                className="text-white hover:text-accent-custom hover:scale-110 transition-all duration-200"
               >
                 <Phone className="h-6 w-6" />
               </a>

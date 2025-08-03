@@ -22,7 +22,7 @@ export default function Education() {
                 <GraduationCap className="h-4 w-4 text-white" />
               </div>
               <div className="ml-12 md:ml-0 md:w-1/2 md:pr-8">
-                <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
+                <div className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-card-foreground">Master of Computer Applications</h3>
@@ -45,7 +45,7 @@ export default function Education() {
                 <GraduationCap className="h-4 w-4 text-white" />
               </div>
               <div className="ml-12 md:ml-0 md:w-1/2 md:pl-8">
-                <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
+                <div className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-card-foreground">BSc Computer Science</h3>

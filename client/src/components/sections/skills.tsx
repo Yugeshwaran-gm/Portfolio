@@ -41,8 +41,8 @@ export default function Skills() {
             {languages.map((lang) => {
               const IconComponent = lang.icon;
               return (
-                <div key={lang.name} className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg transition-all duration-200 hover:border-primary">
-                  <IconComponent className={`text-4xl mb-3 mx-auto ${lang.color}`} />
+                <div key={lang.name} className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg hover:scale-105 hover:-translate-y-1 transition-all duration-300 hover:border-primary group cursor-pointer">
+                  <IconComponent className={`text-4xl mb-3 mx-auto ${lang.color} group-hover:scale-110 transition-transform duration-300`} />
                   <h4 className="font-semibold text-card-foreground">{lang.name}</h4>
                 </div>
               );
@@ -57,8 +57,8 @@ export default function Skills() {
             {databases.map((db) => {
               const IconComponent = db.icon;
               return (
-                <div key={db.name} className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg transition-all duration-200 hover:border-primary">
-                  <IconComponent className={`text-4xl mb-3 mx-auto ${db.color}`} />
+                <div key={db.name} className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg hover:scale-105 hover:-translate-y-1 transition-all duration-300 hover:border-primary group cursor-pointer">
+                  <IconComponent className={`text-4xl mb-3 mx-auto ${db.color} group-hover:scale-110 transition-transform duration-300`} />
                   <h4 className="font-semibold text-card-foreground">{db.name}</h4>
                 </div>
               );
@@ -73,8 +73,8 @@ export default function Skills() {
             {tools.map((tool) => {
               const IconComponent = tool.icon;
               return (
-                <div key={tool.name} className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg transition-all duration-200 hover:border-primary">
-                  <IconComponent className={`text-4xl mb-3 mx-auto ${tool.color}`} />
+                <div key={tool.name} className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg hover:scale-105 hover:-translate-y-1 transition-all duration-300 hover:border-primary group cursor-pointer">
+                  <IconComponent className={`text-4xl mb-3 mx-auto ${tool.color} group-hover:scale-110 transition-transform duration-300`} />
                   <h4 className="font-semibold text-card-foreground">{tool.name}</h4>
                 </div>
               );

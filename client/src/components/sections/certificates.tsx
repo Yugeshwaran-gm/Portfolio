@@ -81,9 +81,9 @@ export default function Certificates() {
           {certificates.map((cert, index) => {
             const IconComponent = cert.icon;
             return (
-              <div key={index} className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-200">
+              <div key={index} className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
                 <div className="flex items-center gap-3 mb-4">
-                  <IconComponent className="h-5 w-5 text-secondary-custom" />
+                  <IconComponent className="h-5 w-5 text-secondary-custom group-hover:scale-110 transition-transform duration-300" />
                   <h3 className="font-bold text-card-foreground">{cert.title}</h3>
                 </div>
                 <p className="text-muted-foreground text-sm mb-2">{cert.issuer} • {cert.date}</p>

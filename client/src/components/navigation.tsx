@@ -43,7 +43,7 @@ export default function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-secondary-custom transition-colors duration-200"
+                className="text-foreground hover:text-secondary-custom hover:scale-105 transition-all duration-200"
               >
                 {item.label}
               </button>
@@ -74,7 +74,7 @@ export default function Navigation() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left text-foreground hover:text-secondary-custom transition-colors duration-200"
+                  className="text-left text-foreground hover:text-secondary-custom hover:scale-105 transition-all duration-200"
                 >
                   {item.label}
                 </button>

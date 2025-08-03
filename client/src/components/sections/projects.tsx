@@ -20,7 +20,7 @@ export default function Projects() {
 
         <div className="grid lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
           {/* Auction System Project */}
-          <div className="bg-card border border-border rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-card border border-border rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 group">
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img
@@ -68,7 +68,7 @@ export default function Projects() {
           </div>
 
           {/* WORK HUNT Project */}
-          <div className="bg-card border border-border rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-card border border-border rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 group">
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img
