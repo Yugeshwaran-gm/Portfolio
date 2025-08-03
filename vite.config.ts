@@ -18,14 +18,14 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "src"), // ✅ FIXED
-      "@shared": path.resolve(import.meta.dirname, "../shared"),
-      "@assets": path.resolve(import.meta.dirname, "../attached_assets"),
+      "@": path.resolve(__dirname, "client/src"), // ✅ now points to actual src
+      "@shared": path.resolve(__dirname, "shared"),
+      "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  root: path.resolve(import.meta.dirname), // ✅ FIXED root (already in client)
+  root: path.resolve(__dirname, "client"), // ✅ set root to client folder
   build: {
-    outDir: path.resolve(import.meta.dirname, "../dist/public"),
+    outDir: path.resolve(__dirname, "dist/public"), // ✅ dist/public for server
     emptyOutDir: true,
   },
   server: {
