@@ -2,6 +2,7 @@ import express, { type Request, Response, NextFunction } from "express";
 import dotenv from "dotenv";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import path from "path";
 
 dotenv.config();
 console.log("GMAIL_USER:", process.env.GMAIL_USER);
